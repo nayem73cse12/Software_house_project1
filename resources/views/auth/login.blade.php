@@ -1,23 +1,31 @@
-<!-- resources/views/auth/login.blade.php -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>1st Project</title>
+        <style type="text/css" href="/bootstrap/bootstrap.min.css"></style>
+        {!! Html::style('bootstrap/css/bootstrap.min.css') !!}
 
-<form method="POST" action="/auth/login">
-    {!! csrf_field() !!}
+        {!! Html::script('bootstrap/js/jquery.js') !!}
+    </head>
 
-    <div>
-        Email
-        <input type="email" name="email" value="{{ old('email') }}">
-    </div>
-
-    <div>
-        Password
-        <input type="password" name="password" id="password">
-    </div>
-
-    <div>
-        <input type="checkbox" name="remember"> Remember Me
-    </div>
-
-    <div>
-        <button type="submit">Login</button>
-    </div>
-</form>
+    <body>
+        <!-- resources/views/auth/login.blade.php -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3">
+                    <form class="" method="POST" action="/auth/login">
+                        {!! csrf_field() !!}
+                        <div class="input-group">
+                            <input type="email" name="email" value="{{ old('email') }}" placeholder="Your Email">
+                        </div>
+                        
+                        <div class="input-group">
+                            <input type="password" name="password" id="password" placeholder="Your Password">
+                        </div>
+                        <input type="submit" class="btn btn-info" value="Log In">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

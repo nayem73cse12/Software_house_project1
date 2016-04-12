@@ -11,9 +11,8 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/',['as'=>'registrationForm','uses'=>'formController@show']);
+
 
 // Authentication routes...
 Route::get('auth/login', 'Auth\AuthController@getLogin');
