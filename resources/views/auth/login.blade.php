@@ -1,31 +1,24 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>1st Project</title>
-        <style type="text/css" href="/bootstrap/bootstrap.min.css"></style>
-        {!! Html::style('bootstrap/css/bootstrap.min.css') !!}
+@extends('layouts.master')
 
-        {!! Html::script('bootstrap/js/jquery.js') !!}
-    </head>
-
-    <body>
-        <!-- resources/views/auth/login.blade.php -->
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-md-offset-3">
-                    <form class="" method="POST" action="/auth/login">
-                        {!! csrf_field() !!}
-                        <div class="input-group">
-                            <input type="email" name="email" value="{{ old('email') }}" placeholder="Your Email">
-                        </div>
-                        
-                        <div class="input-group">
-                            <input type="password" name="password" id="password" placeholder="Your Password">
-                        </div>
-                        <input type="submit" class="btn btn-info" value="Log In">
-                    </form>
-                </div>
+@section('content')
+    <div class="login-page">
+        <div class="login-content">
+            <h1 class="text-center">
+                Log In
+            </h1>
+            <div class="login-form">
+                <form method="POST" action="/auth/login">
+                    {!! csrf_field() !!}
+                    <div class="form-group">
+                        <input class="form-control" type="email" name="email" value="{{ old('email') }}" placeholder="Your Email">
+                    </div>
+                    
+                    <div class="form-group">
+                        <input class="form-control" type="password" name="password" id="password" placeholder="Your Password">
+                    </div>
+                    <input type="submit" class="btn btn-info btn-submit" value="Log In">
+                </form>
             </div>
         </div>
-    </body>
-</html>
+    </div>
+@endsection
