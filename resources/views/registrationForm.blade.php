@@ -73,7 +73,7 @@ table.form input.submit-text { font: 1.4em Georgia, "Times New Roman", Times, se
 			
 
 			<tr>
-				<td class="submit-button-right" colspan="2"><input class="submit-text" type="submit" value="Submit" /></td>
+				<td class="submit-button-right" colspan="2"><input class="submit-text" type="submit" value="Next" /></td>
 			</tr>
 		</table>
 	</form>
