@@ -21,4 +21,9 @@ class formController extends Controller
             return redirect ('auth/login');
 
     }
+
+    public function form1()
+    {
+    	return view('forms.form1');
+    }
 }

@@ -15,7 +15,10 @@ Typography
 */
 
 h1,h2,h3,h4,h5,h6 {
-	margin: 20px 0px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	margin: 0px 0px;
+	padding: 12px 0px;
 }
 
 
@@ -48,6 +51,8 @@ Button
 
 .btn {
 	border-radius: 0px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
 }
 
 /*
@@ -66,6 +71,11 @@ Log in form
 .login-content {
     display: table-cell;
     vertical-align: middle;
+}
+
+.login-content h1 {
+	background-color: rgba(61, 165, 195, 0.68);
+	color: #ffffff;
 }
 
 .login-form {
