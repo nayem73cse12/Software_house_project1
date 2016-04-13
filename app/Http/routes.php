@@ -25,3 +25,6 @@ Route::post('auth/register', 'Auth\AuthController@postRegister');
 
 
 Route::get('/registrationForm',['as'=>'registrationForm','uses'=>'formController@show']);
+
+Route::post('/registrationForm',['as'=>'register','uses'=>'formController@register']);
+
