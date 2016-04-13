@@ -50,23 +50,23 @@ table.form input.submit-text { font: 1.4em Georgia, "Times New Roman", Times, se
 		<table class="form">
 			<tr>
 				<th><label for="input-one"><strong>Name:</strong></label></th>
-				<td><input class="inp-text" name="input-one-name" id="input-one" type="text" size="30" /></td>
+				<td><input class="inp-text" name="name" id="input-one" type="text" size="30" /></td>
 			</tr>
 
 			<tr>
 				<th><label for="input-two"><strong>Dept:</strong></label></th>
-				<td><input class="inp-text" name="input-two-name" id="input-two" type="text" size="30" /></td>
+				<td><input class="inp-text" name="dept" id="input-two" type="text" size="30" /></td>
 			</tr>
 
 			<tr>
 				<th><label for="input-three"><strong>Reg no:</strong></label></th>
-				<td><input class="inp-text" name="input-three-name" id="input-three" type="text" size="30" /></td>
+				<td><input class="inp-text" name="reg_no" id="input-three" type="text" size="30" /></td>
 			</tr>
 
 			<tr>
 				<th class="message-up"><label for="message"><strong>Comment:</strong></label></th>
 				<td>
-				<textarea name="textarea-name" id="message" cols="30" rows="5"></textarea>
+				<textarea name="comment" id="message" cols="30" rows="5"></textarea>
 				</td>
 			</tr>
 
