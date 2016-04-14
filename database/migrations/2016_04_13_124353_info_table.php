@@ -13,10 +13,10 @@ class InfoTable extends Migration
     public function up()
     {
          Schema::create('infoTable', function (Blueprint $table) {
-            $table->increments('reg_id');
+            $table->increments('register_id');
             $table->string('name');
             $table->string('dept');
-            $table->string('registration_on');
+            $table->string('registration_no');
             $table->string('comment');
             $table->timestamps();
         });
@@ -29,6 +29,7 @@ class InfoTable extends Migration
      */
     public function down()
     {
-        //
+        Schema::drop('infoTable');
+
     }
 }

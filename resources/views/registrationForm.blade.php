@@ -47,6 +47,7 @@ table.form input.submit-text { font: 1.4em Georgia, "Times New Roman", Times, se
 <body>
 
 	<form action="" method="post">
+	   {!! csrf_field() !!}
 		<table class="form">
 			<tr>
 				<th><label for="input-one"><strong>Name:</strong></label></th>
