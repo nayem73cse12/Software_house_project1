@@ -28,3 +28,5 @@ Route::get('/registrationForm',['as'=>'registrationForm','uses'=>'formController
 
 Route::post('/registrationForm',['as'=>'register','uses'=>'formController@register']);
 
+Route::get('/questionForm',['as'=>'questionForm','uses'=>'questionController@show']);
+

@@ -40,7 +40,8 @@ class formController extends Controller
             $response=register::create($data);
             if($response)
             {
-            	return view('questionForm');
+
+            	return redirect ('/questionForm');
             }
 
 
