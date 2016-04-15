@@ -2,7 +2,7 @@
 @extends('layouts.master')
 
 @section('content')
-<div class="container">
+
 	<div class="row">
 		<div class="col-md-10">
 			
@@ -18,12 +18,18 @@
             <td>{{$row->question}}</td>
             
             </tr>
-
+            
             @endforeach
       
 			</table>
+			
 			{!! $data->render() !!}
+			@if($data->currentPage()==$data->lastPage() )
+	    <br><a href="" class="btn btn-default btn-lg btn-block">Submit</a><br>
+		@endif
+			
 		</div>
+	
 	</div>
-</div>
+
 @endsection
