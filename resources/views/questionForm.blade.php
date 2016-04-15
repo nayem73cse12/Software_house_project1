@@ -25,7 +25,7 @@
 			
 			{!! $data->render() !!}
 			@if($data->currentPage()==$data->lastPage() )
-	    <br><a href="" class="btn btn-default btn-lg btn-block">Submit</a><br>
+	    <br><a href="" class="btn btn-primary btn-lg btn-block">Submit</a><br>
 		@endif
 			
 		</div>
