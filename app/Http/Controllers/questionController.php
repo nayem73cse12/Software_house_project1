@@ -19,7 +19,7 @@ class questionController extends Controller
 	{
          if(Auth::check())
          {
-         	$data=question::all();
+         	$data=question::paginate(5);
          	return view('questionForm')->with('data',$data);
          }
          else

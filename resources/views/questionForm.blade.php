@@ -22,6 +22,7 @@
             @endforeach
       
 			</table>
+			{!! $data->render() !!}
 		</div>
 	</div>
 </div>
