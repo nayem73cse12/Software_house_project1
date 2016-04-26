@@ -16,6 +16,10 @@
 			<tr>
             <td>{{$i++}}</td>
             <td>{{$row->question}}</td>
+            <td>{{$row->optoion_1}}</td>
+            <td>{{$row->optoion_2}}</td>
+            <td>{{$row->optoion_3}}</td>
+            <td>{{$row->optoion_4}}</td>
             
             </tr>
             
