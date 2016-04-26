@@ -11,8 +11,6 @@
 |
 */
 
-Route::get('/',['as'=>'registrationForm','uses'=>'formController@show']);
-
 
 // Authentication routes...
 Route::get('auth/login', 'Auth\AuthController@getLogin');
@@ -26,6 +24,9 @@ Route::post('auth/register', 'Auth\AuthController@postRegister');
 
 Route::get('/registrationForm',['as'=>'registrationForm','uses'=>'formController@show']);
 
-
 //test
 Route::get('/form1',['as'=>'form1','uses'=>'formController@form1']);
+
+Route::post('/registrationForm',['as'=>'register','uses'=>'formController@register']);
+
+Route::get('/questionForm',['as'=>'questionForm','uses'=>'questionController@show']);
