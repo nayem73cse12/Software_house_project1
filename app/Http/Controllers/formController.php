@@ -24,6 +24,11 @@ class formController extends Controller
 
     }
 
+    public function form1()
+    {
+    	return view('forms.form1');
+    }
+
     public function register()
     {
     	if(Auth::check())
