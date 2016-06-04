@@ -1,32 +1,35 @@
+@extends('layouts.master')
 
-<form method="POST" action="/auth/register">
-    {!! csrf_field() !!}
+@section('content')
+    <div class="col-md-6 col-md-offset-3">
+        <div class="login-page">
+            <div class="login-content">
+                <h1 class="text-center">
+                    Registration
+                </h1>
+                <div class="login-form">
+                    <form method="POST" action="/auth/register">
+                        {!! csrf_field() !!}
+                        <div class="form-group">
+                            <input class="form-control" type="text" name="name" value="{{ old('name') }}" placeholder="Your Name">
+                        </div>
+                        
+                        <div class="form-group">
+                            <input class="form-control" type="email" name="email" value="{{ old('email') }}" placeholder="Your Email">
+                        </div>
 
-    <div>
-        Name
-        <input type="text" name="name" value="{{ old('name') }}">
+                        <div class="form-group">
+                            <input class="form-control" type="password" name="password" placeholder="Your Password">
+                        </div>
+
+                        <div class="form-group">
+                            <input class="form-control" type="password" name="password_confirmation" placeholder="Password Confirmation">
+                        </div>
+
+                        <input type="submit" class="btn btn-info btn-submit" value="Register">
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
-
-    <div>
-        Email
-        <input type="email" name="email" value="{{ old('email') }}">
-    </div>
-
-    <div>
-        Password
-        <input type="password" name="password">
-    </div>
-
-
-    <div>
-        Confirm Password
-        <input type="password" name="password_confirmation">
-    </div>
-
-    
-    <div>
-        <button type="submit">Register</button>
-    </div>
-</form>
-
-
+@endsection
